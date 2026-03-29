@@ -1,0 +1,130 @@
+    1  echo $0
+    2  pwd
+    3  ls
+    4  cd Desktop
+    5  ls
+    6  cd Github
+    7  git clone https://github.com/dkrznar/FIPU-OS-vjezbe.git
+    8  ls
+    9  cd FIPU-OS-vjezbe
+   10  pwd
+   11  ls
+   12  mkdir vjezba1
+   13  cd vjezba1
+   14  touch README.md
+   15  cd ~
+   16  pwd
+   17  cd Desktop/Github/FIPU-OS-vjezbe
+   18  ls
+   19  pws
+   20  pwd
+   21  ls
+   22  echo $0
+   23  ls
+   24  cd Desktop
+   25  ls
+   26  cd Github
+   27  mkdir vjezba_2
+   28  git add .
+   29  ls
+   30  cd vjezba_2
+   31  git add .
+   32  cd .
+   33  clone https://github.com/dkrznar/FIPU-OS-vjezbe.git
+   34  ls
+   35  cd .
+   36  ls
+   37  cd ..
+   38  ls
+   39  cd FIPU-OS-vjezbe
+   40  ls
+   41  mkdir vjezba_2
+   42  git add .
+   43  git commit -m "dodane mape"
+   44  git config --global user.email "dkrznar95@gmail.com"
+   45  git commit -m "Dodane mape"
+   46  git config --global user.name "dkrznar"
+   47  git commit -m "Dodane mape"
+   48  git push
+   49  git remote set-url origin https://dkrznar:TVOJ_TOKEN@github.com/dkrznar/FIPU-OS-vjezbe.git
+   50  git push
+   51  ls
+   52  cd Desktop
+   53  cd Github
+   54  ls
+   55  cd FIPU-OS-vjezbe
+   56  git --version
+   57  git config --global user.name "dkrznar"
+   58  git congig --user.email "dkrznar95@gmail.com"
+   59  git config --user.email "dkrznar95@gmail.com"
+   60  git config --global user.email "dkrznar95@gmail.com"
+   61  ss-keygen -t ed25519 -C "dkrznar95@gmail.com"
+   62  ssh-keygen -t ed25519 -C "dkrznar95@gmail.com"
+   63  cat ~/.ssh/id_ed25519.pub
+   64  ssh -T git@github.com
+   65  git add .
+   66  git commit -m "Dodane mape"
+   67  git push
+   68  git remote set-url origin git@github.com:dkrznar/FIPU-OS-vjezbe.git
+   69  git push
+   70  ls
+   71  cd vjezba_2
+   72  mkdir vjezba_2.txt
+   73  ls
+   74  mkdir vjezba_2/data
+   75  cd --
+   76  cd..
+   77  cd ..
+   78  ls
+   79  cd danijela
+   80  ls
+   81  cd Desktop/FIPU-OS-vjezbe
+   82  ls
+   83  cd Desktop
+   84  cd Github
+   85  cd FIPU-OS-vjezbe
+   86  mkdir vjezba_2/data
+   87  mkdir vjezba_2/backup
+   88  git add .
+   89  git commit -m "Dodane mape unutar vjezba_2"
+   90  git push
+   91  cd vjezba_2/data
+   92  touch scripts.js style.css .env
+   93  echo scripts.js: console.log("Hello, World!")
+   94  echo scripts.js: console.lo("Hello, World!")
+   95  echo 'scripts.js: console.log("Hello, World!")'
+   96  echo 'style.css : body {background-color: #f0f0f0;} '
+   97  echo '.env : VJEZBE=OS'
+   98  cat scripts.js
+   99  cat style.css
+  100  echo 'console.log("Hello, World!")' > scripts.js
+  101  echo 'body { background-color: #f0f0f0; }" > style.css
+echo 'VJEZBE=OS' > .env
+cat style.css
+  102  echo 'body { background-color: #f0f0f0; }' > style.css
+  103  echo 'VJEZBE=OS' > .env
+  104  cat scripts.js
+  105  cat style.css
+  106  cat .env
+  107  git add .
+  108  git commit -m "Dodane datotke"
+  109  git push
+  110  cp -v data/* backup/
+  111  cd ..
+  112  cp -v data/* backup/
+  113  cp -v data/.env backup/
+  114  cd data
+  115  ls -laS ../backup
+  116  rm -vi scripts.js style.css
+  117  cp -nv ../backup/* .
+  118  cp -nv ../backup/.env .
+  119  ls -lAt
+  120  tree -a data
+  121  sudo apt install tree
+  122  tree -a data
+  123  tree -a .
+  124  cd ..
+  125  ls -laS
+  126  ls -lSh
+  127  tree -a
+  128  history > vjezba_2_history.txt
