@@ -1,0 +1,94 @@
+Zadatak 1
+danijela@DESKTOP-7CKTPG0:/mnt/c/Users/Danijela/Desktop/Github/FIPU-OS-vjezbe$ mkdir vjezba_2/data
+danijela@DESKTOP-7CKTPG0:/mnt/c/Users/Danijela/Desktop/Github/FIPU-OS-vjezbe$ mkdir vjezba_2/backup
+danijela@DESKTOP-7CKTPG0:/mnt/c/Users/Danijela/Desktop/Github/FIPU-OS-vjezbe$ git add .
+danijela@DESKTOP-7CKTPG0:/mnt/c/Users/Danijela/Desktop/Github/FIPU-OS-vjezbe$ git commit -m "Dodane mape unutar vjezba_2"
+"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+danijela@DESKTOP-7CKTPG0:/mnt/c/Users/Danijela/Desktop/Github/FIPU-OS-vjezbe$ git push
+Everything up-to-date
+
+Zadatak 2
+danijela@DESKTOP-7CKTPG0:/mnt/c/Users/Danijela/Desktop/Github/FIPU-OS-vjezbe$ cd vjezba_2/data
+danijela@DESKTOP-7CKTPG0:/mnt/c/Users/Danijela/Desktop/Github/FIPU-OS-vjezbe/vjezba_2/data$ touch scripts.js style.css .env
+
+danijela@DESKTOP-7CKTPG0:/mnt/c/Users/Danijela/Desktop/Github/FIPU-OS-vjezbe/vjezba_2/data$ echo 'console.log("Hello, World!")' > scripts.js
+danijela@DESKTOP-7CKTPG0:/mnt/c/Users/Danijela/Desktop/Github/FIPU-OS-vjezbe/vjezba_2/data$ echo 'body { background-color: #f0f0f0; }' > style.css
+danijela@DESKTOP-7CKTPG0:/mnt/c/Users/Danijela/Desktop/Github/FIPU-OS-vjezbe/vjezba_2/data$ echo 'VJEZBE=OS' > .env
+danijela@DESKTOP-7CKTPG0:/mnt/c/Users/Danijela/Desktop/Github/FIPU-OS-vjezbe/vjezba_2/data$ cat scripts.js
+console.log("Hello, World!")
+danijela@DESKTOP-7CKTPG0:/mnt/c/Users/Danijela/Desktop/Github/FIPU-OS-vjezbe/vjezba_2/data$ cat style.css
+body { background-color: #f0f0f0; }
+danijela@DESKTOP-7CKTPG0:/mnt/c/Users/Danijela/Desktop/Github/FIPU-OS-vjezbe/vjezba_2/data$ cat .env
+VJEZBE=OS
+danijela@DESKTOP-7CKTPG0:/mnt/c/Users/Danijela/Desktop/Github/FIPU-OS-vjezbe/vjezba_2/data$ git add .
+danijela@DESKTOP-7CKTPG0:/mnt/c/Users/Danijela/Desktop/Github/FIPU-OS-vjezbe/vjezba_2/data$ git commit -m "Dodane datotke"
+danijela@DESKTOP-7CKTPG0:/mnt/c/Users/Danijela/Desktop/Github/FIPU-OS-vjezbe/vjezba_2/data$ git push
+
+Zadatak 3
+danijela@DESKTOP-7CKTPG0:/mnt/c/Users/Danijela/Desktop/Github/FIPU-OS-vjezbe/vjezba_2/data$ cd ..
+danijela@DESKTOP-7CKTPG0:/mnt/c/Users/Danijela/Desktop/Github/FIPU-OS-vjezbe/vjezba_2$ cp -v data/* backup/
+'data/scripts.js' -> 'backup/scripts.js'
+'data/style.css' -> 'backup/style.css'
+danijela@DESKTOP-7CKTPG0:/mnt/c/Users/Danijela/Desktop/Github/FIPU-OS-vjezbe/vjezba_2$ cp -v data/.env backup/
+'data/.env' -> 'backup/.env'
+danijela@DESKTOP-7CKTPG0:/mnt/c/Users/Danijela/Desktop/Github/FIPU-OS-vjezbe/vjezba_2$ cd data
+danijela@DESKTOP-7CKTPG0:/mnt/c/Users/Danijela/Desktop/Github/FIPU-OS-vjezbe/vjezba_2/data$ ls -laS ../backup
+total 0
+drwxrwxrwx 1 danijela danijela 4096 Mar 29 13:51 .
+drwxrwxrwx 1 danijela danijela 4096 Mar 29 13:32 ..
+-rwxrwxrwx 1 danijela danijela   36 Mar 29 13:51 style.css
+-rwxrwxrwx 1 danijela danijela   29 Mar 29 13:51 scripts.js
+-rwxrwxrwx 1 danijela danijela   10 Mar 29 13:51 .env
+
+Zadatak 4:
+danijela@DESKTOP-7CKTPG0:/mnt/c/Users/Danijela/Desktop/Github/FIPU-OS-vjezbe/vjezba_2/data$ rm -vi scripts.js style.css
+rm: remove regular file 'scripts.js'? y
+removed 'scripts.js'
+rm: remove regular file 'style.css'? y
+removed 'style.css'
+danijela@DESKTOP-7CKTPG0:/mnt/c/Users/Danijela/Desktop/Github/FIPU-OS-vjezbe/vjezba_2/data$ cp -nv ../backup/* .
+cp: warning: behavior of -n is non-portable and may change in future; use --update=none instead
+'../backup/scripts.js' -> './scripts.js'
+'../backup/style.css' -> './style.css'
+danijela@DESKTOP-7CKTPG0:/mnt/c/Users/Danijela/Desktop/Github/FIPU-OS-vjezbe/vjezba_2/data$ cp -nv ../backup/.env .
+cp: warning: behavior of -n is non-portable and may change in future; use --update=none instead
+danijela@DESKTOP-7CKTPG0:/mnt/c/Users/Danijela/Desktop/Github/FIPU-OS-vjezbe/vjezba_2/data$ ls -lAt
+total 0
+-rwxrwxrwx 1 danijela danijela 36 Mar 29 13:55 style.css
+-rwxrwxrwx 1 danijela danijela 29 Mar 29 13:55 scripts.js
+-rwxrwxrwx 1 danijela danijela 10 Mar 29 13:49 .env
+danijela@DESKTOP-7CKTPG0:/mnt/c/Users/Danijela/Desktop/Github/FIPU-OS-vjezbe/vjezba_2/data$ tree -a .
+.
+├── .env
+├── scripts.js
+└── style.css
+
+Zadatak 5
+danijela@DESKTOP-7CKTPG0:/mnt/c/Users/Danijela/Desktop/Github/FIPU-OS-vjezbe/vjezba_2/data$ cd ..
+danijela@DESKTOP-7CKTPG0:/mnt/c/Users/Danijela/Desktop/Github/FIPU-OS-vjezbe/vjezba_2$ ls -laS
+total 0
+drwxrwxrwx 1 danijela danijela 4096 Mar 29 13:32 .
+drwxrwxrwx 1 danijela danijela 4096 Mar 29 13:03 ..
+drwxrwxrwx 1 danijela danijela 4096 Mar 29 13:51 backup
+drwxrwxrwx 1 danijela danijela 4096 Mar 29 13:55 data
+drwxrwxrwx 1 danijela danijela 4096 Mar 29 13:28 vjezba_2.txt
+danijela@DESKTOP-7CKTPG0:/mnt/c/Users/Danijela/Desktop/Github/FIPU-OS-vjezbe/vjezba_2$ ls -lSh
+total 0
+drwxrwxrwx 1 danijela danijela 4.0K Mar 29 13:51 backup
+drwxrwxrwx 1 danijela danijela 4.0K Mar 29 13:55 data
+drwxrwxrwx 1 danijela danijela 4.0K Mar 29 13:28 vjezba_2.txt
+danijela@DESKTOP-7CKTPG0:/mnt/c/Users/Danijela/Desktop/Github/FIPU-OS-vjezbe/vjezba_2$ tree -a
+.
+├── backup
+│   ├── .env
+│   ├── scripts.js
+│   └── style.css
+├── data
+│   ├── .env
+│   ├── scripts.js
+│   └── style.css
+└── vjezba_2.txt
